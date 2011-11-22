@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Deals!</title>
+  </head>
+  <body>
+    <p>
+      <% @data["deals"].each do |deal_hash| %>
+      	<li><img src="<%= deal_hash["mediumImageUrl"] %>"/> <%= deal_hash["title"]%></li>
+      	<% deal_hash.inspect %>
+      <% end %>
+    </p>
+  </body>
+</html>
+
